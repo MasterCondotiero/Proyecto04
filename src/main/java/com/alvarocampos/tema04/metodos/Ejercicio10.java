@@ -3,9 +3,9 @@ package com.alvarocampos.tema04.metodos;
 import java.util.Scanner;
 
 public class Ejercicio10 {
-    public static int multi(int n) {
+    public static void multi(int n) {
         for (int i = 1; i <= 10; i--){
-            return n * multi(+1);
+            System.out.println(n + " * " + i + " = " + i * n);
         }
     }
     public static void main(String[] args) {
@@ -13,7 +13,6 @@ public class Ejercicio10 {
         System.out.println("Ingresa un numero: ");
         int numero = Integer.parseInt(sc.nextLine());
 
-        int resultado = multi(numero);
-        System.out.println("La tabla de multiplicar de " + numero + " es: " + resultado);
+        multi(numero);
     }
 }
