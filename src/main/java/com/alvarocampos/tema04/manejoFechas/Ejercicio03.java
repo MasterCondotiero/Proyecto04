@@ -30,7 +30,7 @@ public class Ejercicio03 {
         };
         return orbitDays;
     }
-    public static void main(String args[]){
+    public static void main(String args[] ){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduce tu fecha de nacimiento (dd/MM/yyyy):");
         String fechaStr = scanner.nextLine();
